@@ -47,7 +47,7 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-AUTH_USER = os.environ.get('AUTH_USERS', '5680454765').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '7068000043').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
@@ -404,7 +404,7 @@ async def yt2m_handler(bot: Client, m: Message):
     youtube_link = input.text.strip()
     await input.delete(True)
 
-    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n🔗𝐔𝐑𝐋 »  {youtube_link}\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}🐦"
+    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n🔗𝐔𝐑𝐋 »  {youtube_link}\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {мιтσ¢нσи∂яια}🐦"
     await editable.edit(Show, disable_web_page_preview=True)
     await asyncio.sleep(10)
 
@@ -461,7 +461,7 @@ async def start_command(bot: Client, message: Message):
         f"➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n"
         f"➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n"
         f"➠ For Guide Use Command /help 📖\n\n"
-        f"➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {CREDIT} 🦁"
+        f"➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {@N13_shem} 🦁"
     )
     await bot.send_photo(
         chat_id=message.chat.id,
@@ -502,7 +502,7 @@ async def txt_handler(client: Client, m: Message):
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
         f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
         f"➥ /start – Bot Status Check\n"
-        f"➥ /drm – Extract from .txt (Auto)\n"
+        f"➥ /legaa kya – Extract from .txt (Auto)\n"
         f"➥ /y2t – YouTube → .txt Converter\n"  
         f"➥ /ytm – YT .txt → .mp3 downloader\n"  
         f"➥ /yt2m – YT link → .mp3 downloader\n"  
@@ -529,7 +529,7 @@ async def txt_handler(client: Client, m: Message):
         f"• Send any link for auto-extraction\n"  
         f"• Supports batch processing\n\n"  
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {CREDIT} 💻\n"
+        f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {@N13_shem} 💻\n"
         )
     )                    
           
@@ -894,11 +894,11 @@ async def txt_handler(bot: Client, m: Message):
                            f"━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"<blockquote>📚𝐓𝐢𝐭𝐥𝐞 » {name}</blockquote>\n┃\n" \
                            f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {quality}\n┃\n" \
-                           f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">**Original Link**</a>\n┃\n' \
-                           f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">**Api Link**</a>\n' \
+                           f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">**i love you❤ bol phle**</a>\n┃\n' \
+                           f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">**i love you❤ bol phle**</a>\n' \
                            f"━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"🛑**Send** /stop **to stop process**\n┃\n" \
-                           f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}"
+                           f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {@N13_shem}"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
                     filename = res_file  
@@ -1092,8 +1092,8 @@ async def text_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name} [{res}].mp4`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CREDIT}`'
-                cc1 = f'📕𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CREDIT}`'
+                cc = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name} [{res}].mp4`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{мιтσ¢нσи∂яια}`'
+                cc1 = f'📕𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{@N13_shem}`'
                   
                 if "drive" in url:
                     try:
@@ -1188,7 +1188,7 @@ async def text_handler(bot: Client, m: Message):
                 elif 'encrypted.m' in url:    
                     Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ...⏳**\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » {url}\n" \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {@N13_shem}"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
                     filename = res_file  
@@ -1200,7 +1200,7 @@ async def text_handler(bot: Client, m: Message):
                 elif 'drmcdni' in url or 'drm/wv' in url:
                     Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ...⏳**\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » {url}\n" \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {@N13_shem}"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
                     filename = res_file
@@ -1212,7 +1212,7 @@ async def text_handler(bot: Client, m: Message):
                 else:
                     Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ...⏳**\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » {url}\n" \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}"
+                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {@N13_shem}"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
